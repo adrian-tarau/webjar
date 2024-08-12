@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
+
+    <asset-bundle id="bootstrap" path="bootstrap" version="5.3.0" name="Bootstrap">
+        <depends-on-asset-bundle>jquery</depends-on-asset-bundle>
+        <depends-on-asset-bundle>misc</depends-on-asset-bundle>
+
+        <asset path="popper.js" type="script"/>
+        <asset path="bootstrap.js" type="script"/>
+        <asset path="bootstrap.css" type="stylesheet"/>
+
+        <asset path="tippyjs.js" type="script"/>
+        <asset path="tippyjs-init.js" type="script"/>
+        <asset path="tippyjs.css" type="stylesheet"/>
+    </asset-bundle>
+
+</assets>

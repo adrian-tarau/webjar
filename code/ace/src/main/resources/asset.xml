@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
+
+    <asset-bundle id="code" path="code" version="1.0.0" name="Code Editing">
+        <asset path="ace.js" type="script"/>
+        <asset path="ext-statusbar.js" type="script"/>
+        <asset path="ext-textarea.js" type="script"/>
+        <asset path="ext-whitespace.js" type="script"/>
+        <asset path="mode-css.js" type="script"/>
+        <asset path="mode-diff.js" type="script"/>
+        <asset path="mode-html.js" type="script"/>
+        <asset path="mode-java.js" type="script"/>
+        <asset path="mode-javascript.js" type="script"/>
+        <asset path="mode-json.js" type="script"/>
+        <asset path="mode-plain_text.js" type="script"/>
+        <asset path="mode-sh.js" type="script"/>
+        <asset path="mode-sql.js" type="script"/>
+        <asset path="mode-text.js" type="script"/>
+        <asset path="mode-xml.js" type="script"/>
+        <asset path="mode-yaml.js" type="script"/>
+        <asset path="theme-chrome.js" type="script"/>
+        <asset path="theme-clouds.js" type="script"/>
+        <asset path="theme-github.js" type="script"/>
+
+        <asset path="ace.css" type="stylesheet"/>
+        <asset path="theme/chrome.css" type="stylesheet"/>
+        <asset path="theme/clouds.css" type="stylesheet"/>
+        <asset path="theme/github.css" type="stylesheet"/>
+    </asset-bundle>
+</assets>

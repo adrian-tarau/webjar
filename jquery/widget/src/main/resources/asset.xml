@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
+
+    <asset-bundle id="jquery-widget" path="jquery" version="3.7.0" name="JQuery">
+        <depends-on-asset-bundle>jquery</depends-on-asset-bundle>
+
+        <asset path="jquery-ui.js" type="script"/>
+        <asset path="jquery-ui.css" type="stylesheet"/>
+
+        <asset path="jquery.select2.js" type="script"/>
+        <asset path="jquery-select2.css" type="stylesheet"/>
+        <asset path="jquery-select2-bootstrap-theme.css" type="stylesheet"/>
+    </asset-bundle>
+
+</assets>
