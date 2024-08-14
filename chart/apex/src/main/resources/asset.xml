@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
 
-    <asset-bundle id="chart" path="chart" version="3.7.0" name="Chart">
+    <asset-bundle id="chart" path="chart" version="3.7.0" order="200" name="Chart">
         <asset path="apexcharts.js" type="script"/>
         <asset path="apexcharts.css" type="stylesheet"/>
     </asset-bundle>

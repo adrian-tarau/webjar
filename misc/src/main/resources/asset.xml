@@ -6,7 +6,7 @@
         <asset path="loader.css" type="stylesheet"/>
     </asset-bundle>
 
-    <asset-bundle id="misc" path="misc" version="1.0.0" name="Miscellaneous">
+    <asset-bundle id="misc" path="misc" version="1.0.0" name="Miscellaneous" order="30">
         <depends-on-asset-bundle>jquery</depends-on-asset-bundle>
 
         <asset path="pace.js" type="script"/>
@@ -25,6 +25,8 @@
 
         <asset path="overlayscrollbars.js" type="script"/>
         <asset path="overlayscrollbars.css" type="stylesheet"/>
+
+        <asset path="smooth-scroll.js" type="script"/>
     </asset-bundle>
 
 </assets>

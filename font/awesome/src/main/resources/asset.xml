@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
 
-    <asset-bundle id="fa" path="font" version="6.4.0" name="Font Awesome">
+    <asset-bundle id="fa" path="font" version="6.4.0" name="Font Awesome" order="80">
         <asset path="fa-regular.css" type="stylesheet"/>
         <asset path="fa-solid.css" type="stylesheet"/>
         <asset path="fa-brands.css" type="stylesheet"/>

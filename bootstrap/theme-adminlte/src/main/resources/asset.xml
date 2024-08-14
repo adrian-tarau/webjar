@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
 
-    <asset-bundle id="adminlte" path="bootstrap" version="4.0.0" name="AdminLTE" theme="adminlte">
+    <asset-bundle id="bootstrap_adminlte" path="bootstrap" version="4.0.0" name="AdminLTE" order="51" theme="adminlte">
         <depends-on-asset-bundle>bootstrap</depends-on-asset-bundle>
 
         <asset path="adminlte.js" type="script"/>

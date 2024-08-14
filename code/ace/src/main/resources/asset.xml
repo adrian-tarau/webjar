@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
 
-    <asset-bundle id="code" path="code" version="1.0.0" name="Code Editing">
+    <asset-bundle id="code" path="code" version="1.0.0" name="Code Editing" order="210">
         <asset path="ace.js" type="script"/>
         <asset path="ext-statusbar.js" type="script"/>
         <asset path="ext-textarea.js" type="script"/>
