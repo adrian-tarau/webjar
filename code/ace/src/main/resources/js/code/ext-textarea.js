@@ -1,4 +1,4 @@
-ace.define("ace/ext/textarea",["require","exports","module","ace/lib/event","ace/lib/useragent","ace/ace"], function(require, exports, module){"use strict";
+define("ace/ext/textarea",["require","exports","module","ace/lib/event","ace/lib/useragent","ace/ace"], function(require, exports, module){"use strict";
 var event = require("../lib/event");
 var UA = require("../lib/useragent");
 var ace = require("../ace");
@@ -371,7 +371,7 @@ exports.defaultOptions = {
 };
 
 });                (function() {
-                    ace.require(["ace/ext/textarea"], function(m) {
+                    window.require(["ace/ext/textarea"], function(m) {
                         if (typeof module == "object" && typeof exports == "object" && module) {
                             module.exports = m;
                         }

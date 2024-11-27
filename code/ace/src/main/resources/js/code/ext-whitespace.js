@@ -1,4 +1,4 @@
-ace.define("ace/ext/whitespace",["require","exports","module","ace/lib/lang"], function(require, exports, module){"use strict";
+define("ace/ext/whitespace",["require","exports","module","ace/lib/lang"], function(require, exports, module){"use strict";
 var lang = require("../lib/lang");
 exports.$detectIndentation = function (lines, fallback) {
     var stats = [];
@@ -183,7 +183,7 @@ exports.commands = [{
     }];
 
 });                (function() {
-                    ace.require(["ace/ext/whitespace"], function(m) {
+                    window.require(["ace/ext/whitespace"], function(m) {
                         if (typeof module == "object" && typeof exports == "object" && module) {
                             module.exports = m;
                         }

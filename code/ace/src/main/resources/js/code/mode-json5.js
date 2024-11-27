@@ -72,6 +72,61 @@ exports.JsonHighlightRules = JsonHighlightRules;
 
 });
 
+define("ace/mode/json5_highlight_rules",["require","exports","module","ace/lib/oop","ace/mode/json_highlight_rules"], function(require, exports, module){"use strict";
+var oop = require("../lib/oop");
+var JsonHighlightRules = require("./json_highlight_rules").JsonHighlightRules;
+var Json5HighlightRules = function () {
+    JsonHighlightRules.call(this);
+    var startRules = [{
+            token: "variable",
+            regex: /[a-zA-Z$_\u00a1-\uffff][\w$\u00a1-\uffff]*\s*(?=:)/
+        }, {
+            token: "variable",
+            regex: /['](?:(?:\\.)|(?:[^'\\]))*?[']\s*(?=:)/
+        }, {
+            token: "constant.language.boolean",
+            regex: /(?:null)\b/
+        }, {
+            token: "string",
+            regex: /'/,
+            next: [{
+                    token: "constant.language.escape",
+                    regex: /\\(?:x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|["\/bfnrt]|$)/,
+                    consumeLineEnd: true
+                }, {
+                    token: "string",
+                    regex: /'|$/,
+                    next: "start"
+                }, {
+                    defaultToken: "string"
+                }]
+        }, {
+            token: "string",
+            regex: /"(?![^"]*":)/,
+            next: [{
+                    token: "constant.language.escape",
+                    regex: /\\(?:x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|["\/bfnrt]|$)/,
+                    consumeLineEnd: true
+                }, {
+                    token: "string",
+                    regex: /"|$/,
+                    next: "start"
+                }, {
+                    defaultToken: "string"
+                }]
+        }, {
+            token: "constant.numeric",
+            regex: /[+-]?(?:Infinity|NaN)\b/
+        }];
+    for (var key in this.$rules)
+        this.$rules[key].unshift.apply(this.$rules[key], startRules);
+    this.normalizeRules();
+};
+oop.inherits(Json5HighlightRules, JsonHighlightRules);
+exports.Json5HighlightRules = Json5HighlightRules;
+
+});
+
 define("ace/mode/matching_brace_outdent",["require","exports","module","ace/range"], function(require, exports, module){"use strict";
 var Range = require("../range").Range;
 var MatchingBraceOutdent = function () { };
@@ -217,13 +272,12 @@ oop.inherits(FoldMode, BaseFoldMode);
 
 });
 
-define("ace/mode/json",["require","exports","module","ace/lib/oop","ace/mode/text","ace/mode/json_highlight_rules","ace/mode/matching_brace_outdent","ace/mode/folding/cstyle","ace/worker/worker_client"], function(require, exports, module){"use strict";
+define("ace/mode/json5",["require","exports","module","ace/lib/oop","ace/mode/text","ace/mode/json5_highlight_rules","ace/mode/matching_brace_outdent","ace/mode/folding/cstyle"], function(require, exports, module){"use strict";
 var oop = require("../lib/oop");
 var TextMode = require("./text").Mode;
-var HighlightRules = require("./json_highlight_rules").JsonHighlightRules;
+var HighlightRules = require("./json5_highlight_rules").Json5HighlightRules;
 var MatchingBraceOutdent = require("./matching_brace_outdent").MatchingBraceOutdent;
 var CStyleFoldMode = require("./folding/cstyle").FoldMode;
-var WorkerClient = require("../worker/worker_client").WorkerClient;
 var Mode = function () {
     this.HighlightRules = HighlightRules;
     this.$outdent = new MatchingBraceOutdent();
@@ -234,39 +288,18 @@ oop.inherits(Mode, TextMode);
 (function () {
     this.lineCommentStart = "//";
     this.blockComment = { start: "/*", end: "*/" };
-    this.getNextLineIndent = function (state, line, tab) {
-        var indent = this.$getIndent(line);
-        if (state == "start") {
-            var match = line.match(/^.*[\{\(\[]\s*$/);
-            if (match) {
-                indent += tab;
-            }
-        }
-        return indent;
-    };
     this.checkOutdent = function (state, line, input) {
         return this.$outdent.checkOutdent(line, input);
     };
     this.autoOutdent = function (state, doc, row) {
         this.$outdent.autoOutdent(doc, row);
     };
-    this.createWorker = function (session) {
-        var worker = new WorkerClient(["ace"], "ace/mode/json_worker", "JsonWorker");
-        worker.attachToDocument(session.getDocument());
-        worker.on("annotate", function (e) {
-            session.setAnnotations(e.data);
-        });
-        worker.on("terminate", function () {
-            session.clearAnnotations();
-        });
-        return worker;
-    };
-    this.$id = "ace/mode/json";
+    this.$id = "ace/mode/json5";
 }).call(Mode.prototype);
 exports.Mode = Mode;
 
 });                (function() {
-                    window.require(["ace/mode/json"], function(m) {
+                    window.require(["ace/mode/json5"], function(m) {
                         if (typeof module == "object" && typeof exports == "object" && module) {
                             module.exports = m;
                         }
