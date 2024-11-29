@@ -10,13 +10,6 @@
         <asset path="ext-whitespace.js" type="script"/>
         <asset path="ext-language_tools.js" type="script"/>
 
-        <asset path="worker-base.js" type="script"/>
-        <asset path="worker-css.js" type="script"/>
-        <asset path="worker-javascript.js" type="script"/>
-        <asset path="worker-json.js" type="script"/>
-        <asset path="worker-xml.js" type="script"/>
-        <asset path="worker-yaml.js" type="script"/>
-
         <asset path="mode-css.js" type="script"/>
         <asset path="mode-diff.js" type="script"/>
         <asset path="mode-html.js" type="script"/>
@@ -31,6 +24,19 @@
         <asset path="mode-text.js" type="script"/>
         <asset path="mode-xml.js" type="script"/>
         <asset path="mode-yaml.js" type="script"/>
+
+        <asset path="worker-base.js" type="script"/>
+        <asset path="worker-css.js" type="script"/>
+        <asset path="worker-javascript.js" type="script"/>
+        <asset path="worker-json.js" type="script"/>
+        <asset path="worker-xml.js" type="script"/>
+        <asset path="worker-yaml.js" type="script"/>
+
+        <asset path="snippets/css.js" type="script"/>
+        <asset path="snippets/java.js" type="script"/>
+        <asset path="snippets/javascript.js" type="script"/>
+        <asset path="snippets/sql.js" type="script"/>
+        <asset path="snippets/xml.js" type="script"/>
 
         <asset path="theme-chrome.js" type="script"/>
         <asset path="theme-clouds.js" type="script"/>

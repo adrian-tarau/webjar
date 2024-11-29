@@ -150,9 +150,9 @@
 }
 
 .ace-chrome .ace_indent-guide {
-  background: url("../chrome-1.png") right repeat-y;
+  background: url("/image/code/chrome-1.png") right repeat-y;
 }
   
 .ace-chrome .ace_indent-guide-active {
-  background: url("../chrome-2.png") right repeat-y;
+  background: url("/image/code/chrome-2.png") right repeat-y;
 }
