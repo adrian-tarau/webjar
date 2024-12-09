@@ -1,6 +1,6 @@
 $(document).ready(function(){
     tippy.setDefaultProps({
-        delay: [1500, 0],
+        delay: [1000, 0],
         arrow: true,
         hideOnClick: true,
         interactive: true,
