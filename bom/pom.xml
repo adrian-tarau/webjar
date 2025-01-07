@@ -31,7 +31,7 @@
     <parent>
         <groupId>net.microfalx.webjar</groupId>
         <artifactId>webjar</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>0.8.0-SNAPSHOT</version>
     </parent>
 
     <name>WebJar :: BOM</name>
