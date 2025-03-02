@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
+
+    <asset-bundle id="bootstrap_tabler" path="bootstrap" version="1.0.0" name="Tabler" order="51" theme="tabler">
+        <depends-on-asset-bundle>bootstrap</depends-on-asset-bundle>
+
+        <asset path="tabler.js" type="script"/>
+        <asset path="tabler-init.js" type="script"/>
+        <asset path="tabler.css" type="stylesheet"/>
+    </asset-bundle>
+</assets>

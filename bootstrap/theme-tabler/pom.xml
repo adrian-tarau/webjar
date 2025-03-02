@@ -24,24 +24,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.microfalx.webjar</groupId>
-    <artifactId>webjar-bootstrap</artifactId>
+    <artifactId>webjar-bootstrap-theme-tabler</artifactId>
     <version>0.8.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
     <parent>
         <groupId>net.microfalx.webjar</groupId>
-        <artifactId>webjar</artifactId>
+        <artifactId>webjar-bootstrap</artifactId>
         <version>0.8.0-SNAPSHOT</version>
     </parent>
 
-    <name>WebJar :: Bootstrap</name>
-    <description>Parent POM for Bootstrap libraries</description>
+    <name>WebJar :: Bootstrap :: Theme :: Tabler</name>
+    <description>Tabler for Bootstrap</description>
 
-    <modules>
-        <module>base</module>
-        <module>theme-adminlte</module>
-        <module>theme-tabler</module>
-        <module>theme-ceres</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>net.microfalx.webjar</groupId>
+            <artifactId>webjar-bootstrap-base</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
