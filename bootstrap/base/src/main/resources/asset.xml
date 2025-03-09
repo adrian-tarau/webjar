@@ -7,7 +7,8 @@
 
         <asset path="popper.js" type="script"/>
         <asset path="bootstrap.js" type="script"/>
-        <asset path="bootstrap.css" type="stylesheet"/>
+        <!-- The default theme has this one -->
+        <!--asset path="bootstrap.css" type="stylesheet"/-->
         <asset path="bootstrap-icons.css" type="stylesheet"/>
 
         <asset path="tippyjs.js" type="script"/>

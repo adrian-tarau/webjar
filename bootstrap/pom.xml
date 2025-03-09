@@ -39,6 +39,7 @@
 
     <modules>
         <module>base</module>
+        <module>theme-default</module>
         <module>theme-adminlte</module>
         <module>theme-tabler</module>
         <module>theme-ceres</module>

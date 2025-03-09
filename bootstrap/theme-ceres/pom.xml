@@ -34,7 +34,7 @@
     </parent>
 
     <name>WebJar :: Bootstrap :: Theme :: Ceres</name>
-    <description>Ceres LTE for Bootstrap</description>
+    <description>Ceres LTE Theme for Bootstrap</description>
 
     <dependencies>
         <dependency>

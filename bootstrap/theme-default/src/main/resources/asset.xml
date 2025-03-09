@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
+
+    <asset-bundle id="bootstrap_default" path="bootstrap" version="5.3.0" name="Default" order="51" theme="default">
+        <depends-on-asset-bundle>bootstrap</depends-on-asset-bundle>
+
+        <asset path="bootstrap.css" type="stylesheet"/>
+    </asset-bundle>
+</assets>
