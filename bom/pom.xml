@@ -72,6 +72,12 @@
 
             <dependency>
                 <groupId>net.microfalx.webjar</groupId>
+                <artifactId>webjar-bootstrap-theme-tabler</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.microfalx.webjar</groupId>
                 <artifactId>webjar-code-ace</artifactId>
                 <version>${project.version}</version>
             </dependency>
