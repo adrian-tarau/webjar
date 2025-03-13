@@ -1,0 +1,20 @@
+[data-bs-theme=dark] .navbar-brand-autodark .navbar-brand-image {
+    filter: none !important;
+}
+
+[data-bs-theme=dark] .navbar-brand-autodark .navbrand-text {
+    font-weight: 300 !important;
+    text-decoration: none !important;
+    color: var(--tblr-secondary) !important;
+}
+
+[data-bs-theme=dark] .navbar-brand-autodark .navbrand-text:hover {
+    font-weight: 300 !important;
+    text-decoration: none !important;
+    color: var(--tblr-secondary) !important;
+}
+
+.table thead th, .markdown > table thead th {
+    text-transform: none !important;
+}
+

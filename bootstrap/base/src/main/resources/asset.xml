@@ -6,7 +6,8 @@
         <depends-on-asset-bundle>misc</depends-on-asset-bundle>
 
         <asset path="popper.js" type="script"/>
-        <asset path="bootstrap.js" type="script"/>
+        <!-- Some themes need this file, some provide everything is needed -->
+        <!-- asset path="bootstrap.js" type="script"/ -->
         <!-- The default theme has this one -->
         <!--asset path="bootstrap.css" type="stylesheet"/-->
         <asset path="bootstrap-icons.css" type="stylesheet"/>

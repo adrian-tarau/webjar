@@ -4,6 +4,7 @@
     <asset-bundle id="bootstrap_adminlte" path="bootstrap" version="4.0.0" name="AdminLTE" order="51" theme="adminlte">
         <depends-on-asset-bundle>bootstrap</depends-on-asset-bundle>
 
+        <asset path="bootstrap.js" type="script"/>
         <asset path="adminlte.js" type="script"/>
         <asset path="adminlte-init.js" type="script"/>
         <asset path="adminlte.css" type="stylesheet"/>

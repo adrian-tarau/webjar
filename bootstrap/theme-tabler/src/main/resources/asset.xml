@@ -7,5 +7,6 @@
         <asset path="tabler.js" type="script"/>
         <asset path="tabler-init.js" type="script"/>
         <asset path="tabler.css" type="stylesheet"/>
+        <asset path="tabler-tweaks.css" type="stylesheet"/>
     </asset-bundle>
 </assets>
