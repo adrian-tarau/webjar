@@ -60,6 +60,12 @@
 
             <dependency>
                 <groupId>net.microfalx.webjar</groupId>
+                <artifactId>webjar-bootstrap-theme-default</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.microfalx.webjar</groupId>
                 <artifactId>webjar-bootstrap-theme-adminlte</artifactId>
                 <version>${project.version}</version>
             </dependency>
