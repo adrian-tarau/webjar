@@ -1,5 +1,5 @@
 /*!
- * AdminLTE v4.0.0-beta1 (https://adminlte.io)
+ * AdminLTE v4.0.0-beta3 (https://adminlte.io)
  * Copyright 2014-2024 Colorlib <https://colorlib.com>
  * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
  */
@@ -248,7 +248,7 @@
             const target = event.currentTarget;
             const data = new PushMenu(target, Defaults);
             data.collapse();
-        });
+        }, { passive: true });
         sidebarOverlay.addEventListener('click', event => {
             event.preventDefault();
             const target = event.currentTarget;
