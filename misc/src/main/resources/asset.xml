@@ -27,6 +27,7 @@
         <asset path="overlayscrollbars.css" type="stylesheet"/>
 
         <asset path="smooth-scroll.js" type="script"/>
+        <asset path="marked.js" type="script"/>
     </asset-bundle>
 
 </assets>
