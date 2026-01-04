@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <assets xmlns="https://net.microfalx/xsd/asset-1.0.xsd">
 
-    <asset-bundle id="bootstrap" path="bootstrap" version="5.3.0" name="Bootstrap" order="50">
+    <asset-bundle id="bootstrap" path="bootstrap" version="5.3.8" name="Bootstrap" order="50">
         <depends-on-asset-bundle>jquery</depends-on-asset-bundle>
         <depends-on-asset-bundle>misc</depends-on-asset-bundle>
 
