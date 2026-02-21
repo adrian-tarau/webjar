@@ -30,4 +30,9 @@
         <asset path="marked.js" type="script"/>
     </asset-bundle>
 
+
+    <asset-bundle id="calendar" path="misc" version="6.1.20" name="Calendar" home-page="https://fullcalendar.io" feature="calendar">
+        <asset path="fullcalendar.js" type="script"/>
+    </asset-bundle>
+
 </assets>
