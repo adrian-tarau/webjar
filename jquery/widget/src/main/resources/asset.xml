@@ -10,6 +10,9 @@
         <asset path="jquery.select2.js" type="script"/>
         <asset path="jquery-select2.css" type="stylesheet"/>
         <asset path="jquery-select2-bootstrap-theme.css" type="stylesheet"/>
+
+        <asset path="jquery-tree.js" type="script"/>
+        <asset path="jquery-tree.css" type="stylesheet"/>
     </asset-bundle>
 
 </assets>
