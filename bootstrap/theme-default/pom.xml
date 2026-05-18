@@ -25,12 +25,12 @@
 
     <groupId>net.microfalx.webjar</groupId>
     <artifactId>webjar-bootstrap-theme-default</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <parent>
         <groupId>net.microfalx.webjar</groupId>
         <artifactId>webjar-bootstrap</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <name>WebJar :: Bootstrap :: Theme :: Default</name>

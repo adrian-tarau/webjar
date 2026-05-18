@@ -25,13 +25,13 @@
 
     <groupId>net.microfalx.webjar</groupId>
     <artifactId>webjar-chart</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
         <groupId>net.microfalx.webjar</groupId>
         <artifactId>webjar</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <name>WebJar :: Chart</name>
