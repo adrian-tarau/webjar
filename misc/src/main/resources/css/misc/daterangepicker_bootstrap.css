@@ -1,0 +1,141 @@
+/* ==========================================
+ * DateRangePicker Bootstrap 5 & Theme Patch
+ * ========================================== */
+
+.daterangepicker {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+    border: 1px solid var(--bs-border-color) !important;
+    font-family: var(--bs-font-sans-serif) !important;
+    box-shadow: var(--bs-box-shadow) !important;
+    border-radius: var(--bs-border-radius) !important;
+    padding: 8px !important;
+}
+
+/* Arrow pointer adjustments */
+.daterangepicker:before {
+    border-bottom: 7px solid var(--bs-border-color) !important;
+}
+.daterangepicker:after {
+    border-bottom: 6px solid var(--bs-body-bg) !important;
+}
+.daterangepicker.drop-up:before {
+    border-top: 7px solid var(--bs-border-color) !important;
+}
+.daterangepicker.drop-up:after {
+    border-top: 6px solid var(--bs-body-bg) !important;
+}
+
+/* Calendar table styling */
+.daterangepicker th,
+.daterangepicker td {
+    font-size: 0.875rem !important;
+    border-radius: var(--bs-border-radius) !important;
+}
+
+.daterangepicker th.month {
+    color: var(--bs-body-color) !important;
+}
+
+/* Day hover and selection states */
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+    background-color: var(--bs-tertiary-bg) !important;
+    color: var(--bs-body-color) !important;
+}
+
+.daterangepicker td.off,
+.daterangepicker td.off.in-range,
+.daterangepicker td.off.start-date,
+.daterangepicker td.off.end-date {
+    background-color: transparent !important;
+    color: var(--bs-secondary-color) !important;
+    opacity: 0.4;
+}
+
+/* Active range highlighting */
+.daterangepicker td.in-range {
+    background-color: rgba(var(--bs-primary-rgb), 0.15) !important;
+    color: var(--bs-body-color) !important;
+    border-radius: 0 !important;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
+
+/* Form Select Elements */
+.daterangepicker select.monthselect,
+.daterangepicker select.yearselect,
+.daterangepicker select.hourselect,
+.daterangepicker select.minuteselect,
+.daterangepicker select.ampmselect {
+    background-color: var(--bs-form-control-bg, var(--bs-body-bg)) !important;
+    color: var(--bs-body-color) !important;
+    border: 1px solid var(--bs-border-color) !important;
+    border-radius: var(--bs-border-radius-sm) !important;
+    padding: 2px 4px !important;
+}
+
+/* Sidebar Custom Preset Ranges Grid */
+.daterangepicker .ranges li {
+    background-color: var(--bs-tertiary-bg) !important;
+    color: var(--bs-body-color) !important;
+    border: 1px solid var(--bs-border-color) !important;
+    border-radius: var(--bs-border-radius) !important;
+    margin-bottom: 4px !important;
+}
+
+.daterangepicker .ranges li:hover {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
+
+.daterangepicker .ranges li.active {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
+
+/* Footer layout action buttons alignment */
+.daterangepicker .drp-buttons {
+    border-top: 1px solid var(--bs-border-color) !important;
+    padding: 8px 0 0 0 !important;
+}
+
+.daterangepicker .drp-selected {
+    color: var(--bs-secondary-color) !important;
+    font-size: 0.8rem !important;
+}
+
+/* Calendar Theme Adjustments */
+
+.daterangepicker .calendar-table {
+    background-color: var(--bs-body-bg) !important;
+    border: 1px solid var(--bs-border-color) !important;
+}
+
+.daterangepicker .calendar-table th {
+    color: var(--bs-body-color) !important;
+}
+
+.daterangepicker .calendar-table td {
+    color: var(--bs-body-color) !important;
+}
+
+.daterangepicker .calendar-table .next span,
+.daterangepicker .calendar-table .prev span {
+    border-color: var(--bs-body-color) !important;
+}
+
+.daterangepicker td.disabled,
+.daterangepicker option.disabled {
+    color: var(--bs-secondary-color) !important;
+    opacity: 0.3;
+}
+
+.daterangepicker.show-ranges .calendar.left {
+    border-left: 1px solid var(--bs-border-color) !important;
+}
+

@@ -27,6 +27,7 @@
 
         <asset path="daterangepicker.js" type="script"/>
         <asset path="daterangepicker.css" type="stylesheet"/>
+        <asset path="daterangepicker_bootstrap.css" type="stylesheet"/>
 
         <asset path="overlayscrollbars.js" type="script"/>
         <asset path="overlayscrollbars.css" type="stylesheet"/>
