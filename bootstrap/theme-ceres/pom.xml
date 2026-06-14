@@ -25,12 +25,12 @@
 
     <groupId>net.microfalx.webjar</groupId>
     <artifactId>webjar-bootstrap-theme-ceres</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <parent>
         <groupId>net.microfalx.webjar</groupId>
         <artifactId>webjar-bootstrap</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1</version>
     </parent>
 
     <name>WebJar :: Bootstrap :: Theme :: Ceres</name>
